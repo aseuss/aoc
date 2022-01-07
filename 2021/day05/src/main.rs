@@ -80,11 +80,11 @@ struct Line {
 fn part_one(map : &mut Vec<i32>, map_width : usize, vent_lines : &Vec<Line>) {
     println!("Part one\n");
 
-        for vent_line in vent_lines {
-            println!("{:?}", vent_line);
-            add_to_map_no_diagonals(map, map_width, &vent_line);
-            println!();
-        }
+    for vent_line in vent_lines {
+        println!("{:?}", vent_line);
+        add_to_map_no_diagonals(map, map_width, &vent_line);
+        println!();
+    }
 }
 
 fn part_two(map : &mut Vec<i32>, map_width : usize, vent_lines : &Vec<Line>) {
